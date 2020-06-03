@@ -1,60 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>ĐỨc s2 Huệ</title>
   <style>
-    body{background-image: url(dark-wood.jpg)}
-    a{color: white;text-decoration:none }
-    #main{margin-left: auto;margin-right:auto;border: 1px solid black;width: 1000px;height: 900px;background-color: white}
-    #head{height: 100px;margin-left:0px;margin-right: 0px;width: auto}
-    #head-link{text-decoration: none;height: 50px;margin-right: 0px;margin-left: 0px;background-color: #AFACA8}
-    #left{margin:10px 10px 20px 10px;width:300px;height:300px;padding-bottom: 10px;float: left;}
-    #content{margin:10px 10px 10px 10px;height: 300px;padding-top: 10px;float:left;width:300px;background-color: white}
-    #right{margin:0px 10px 20px 10px;width: 300px;height:300px;padding-bottom: 10px;float: right;background-color: white;padding-left: 5px}
-#footer{margin-top: 450px;width:auto;height:30px;background-color:#AFACAB;text-align: left;padding-top: 5px}
-    </style>
+    /* vietnamese */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v14/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Rep8ltA.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v14/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3ROp8ltA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/dancingscript/v14/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup8.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zo-mM5Ez.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zoamM5Ez.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zo2mM5Ez.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zoymM5Ez.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lobster Regular'), local('Lobster-Regular'), url(https://fonts.gstatic.com/s/lobster/v22/neILzCirqoswsqX9zoKmMw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+    body {
+      font-family: font-family 'Dancing Script', cursive;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    main {
+    width: 100%;
+    height: 500px;
+
+    background:center/cover url('https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/80268370_1144870729184333_1401595927747100672_n.jpg?_nc_cat=105&_nc_sid=174925&_nc_oc=AQkEYMWVOoqHhoGwtgqmIzKQe7fRdQnvsFJhLUWCuyqThl6Ux9BWQTD70eszRTTFg1U&_nc_ht=scontent.fhan2-4.fna&oh=620ab63fd9a64fc46d71fe199d5ca884&oe=5EFDCF37');
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    }
+
+    main:hover p {
+      display: none
+    }
+
+    main:hover::before {
+      content: 'M không đổ thì nhà m đổ nhé Huệ';
+      font-family: 'Lobster', cursive;
+      font-weight: inherit;
+      color: red;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content:center;
+      align-items: center;
+      background-color: aliceblue;
+      filter: brightness(20px);
+      transition: all 1s;
+      font-size: 30px;
+    }
+    
+  </style>
 </head>
 <body>
-  <div id="main">
-
-<div id="head">
-<img src="header.jpg" style="width:100%">
-</div>
-
-<div id="head-link" style="word-spacing: 50px; padding-left: 5px;padding-top: 50px"><a href="#" style="color: black">Home</a>
-  <a href="#">Classes</a>
-  <a href="#">Catering</a>
-  <a href="#">About</a>
-  <a href="#">content</a>
-</div>
-<div id="left"><img src="bok-choi.jpg">bok choi<img src="teriyaki.jpg"> teriyaki
-</div>
-
-<div id="left"style="padding-top:10px"><div style="font-size:20px ">Japanese vegetarian</div>
-    <div style="color: pink;margin-top:1px">Five week course in london</div><br>
-    A five week introduction to traditional
-    Japanese vegetarian meals, teaching you a <br>
-    selection of  and noodle dishes.<p style="padding-top: 10px">
-    <div style="font-size:20px ">Sauces Masterclass</div><div style="color: pink">One day workshop</div><br>
-    An intensive one-day course looking at how<br>
-    to create the most delicious sauces for use in
-    a range of japanese cookery <br></p>
-
-</div>
-
-<div id="right" ><div style="color: pink">
-  <p>Popular Recipes</p><br><div style="padding-left: 5px">
-<div style="border-bottom:0.1px solid gray">Yakitori(grilled accesskey</div><br>
-<div style="border-bottom:0.1px solid gray">Tsukune (minced chicken patties)</div><br>
-<div style="border-bottom:0.1px solid gray">Okonomiyaki(savory pancakes)</div><br>
-<div style="border-bottom:0.1px solid gray">Miztaki(chicken stew)</div></div></div>
-<p style="padding-top:80px"><div style="color:pink">Contact</div><br>Yoko's Kitchen<br><sub>27</sub> Redchurch Streetr<br>Shoreditch<br>London E<sub>2 7</sub>DP</p>
-</div>
-
-<div  id="footer">2011 Yoko's Kitchen</div>
-  </div>
+  <main>
+    <p>Click me</p>
+  </main>
 </body>
 </html>
